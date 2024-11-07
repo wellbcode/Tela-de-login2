@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+            rel="stylesheet"
+        >
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div class="login-wrapper">
+            <div class="login-side">
+                <a href="#" title="Logo">
+                    <img class="logo" src="../img/logo.png" alt="Logo">
+                </a>
+                <div class="my-form__wrapper">
+                    <div class="login-welcome-row">
+                        <h1>Welcome back &#x1F44F;</h1>
+                        <p>Please enter your details!</p>
+                    </div>
+                    <form class="my-form">
+                        <div class="socials-row">
+                            <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=705648808057-3chuddbr6oahbebib1uh693k02sgfl30.apps.googleusercontent.com&scope=openid%20email%20profile&response_type=id_token&gsiwebsdk=gis_attributes&redirect_uri=https%3A%2F%2Fid.freepik.com&response_mode=form_post&origin=https%3A%2F%2Fid.freepik.com&display=popup&prompt=select_account&gis_params=ChZodHRwczovL2lkLmZyZWVwaWsuY29tEhZodHRwczovL2lkLmZyZWVwaWsuY29tGAcqFjh5aXJPQXhWaWcwbU5LMlBZUG16MEEySDcwNTY0ODgwODA1Ny0zY2h1ZGRicjZvYWhiZWJpYjF1aDY5M2swMnNnZmwzMC5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbTgBQkBmMDYyZDUzZjdiZDI4NDcxOTYxY2YyMzYxNWUyM2E5MDg2ZDBhNTE1NmNjZTMyMWJlNmY2NDFkMWZjYWFiY2I4&service=lso&o2v=1&ddm=0&flowName=GeneralOAuthFlow" title="Use Google">
+                                <img src="../img/google.png" alt="Google">
+                                Log in with Google
+                            </a>
+                            <a href="https://appleid.apple.com/auth/authorize?client_id=com.freepikcompany.web-sign-in&redirect_uri=https%3A%2F%2Fid.freepik.com%2Fapi%2Fv2%2Flogin%2Fapple&response_type=code%20id_token&state=login&scope=name%20email&response_mode=web_message&frame_id=655eb2e4-c75a-4334-85ec-b8ecf3ee6e32&m=11&v=1.5.5" title="Use Apple">
+                                <img src="../img/apple.png" alt="Apple">
+                                Log in with Apple
+                            </a>
+                        </div>
+                        <div class="divider">
+                            <div class="divider-line"></div>
+                            Or
+                            <div class="divider-line"></div>
+                        </div>
+                        
+                        <div class="text-field">
+                            <label for="email">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Your Email"
+                                required
+                            >
+                            <img
+                                alt="Email Icon"
+                                title="Email Icon"
+                                src="../img/email.svg.svg"
+                            >
+                        </div>
+                        <div class="text-field">
+                            <label for="password">Password:</label>
+                            <input
+                                id="password"
+                                type="password"
+                                name="password"
+                                placeholder="Your Password"
+                                title="Minimum 6 characters at 
+                                    least 1 Alphabet, 1 Number and 1 Symbol"
+                                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{6,}$"
+                                required
+                            >
+                            <img src="../img/password.sgv.svg" alt="Password Icon" title="Password Icon">
+                        </div>
+                        <input type="submit" class="my-form__button" value="Login">
+                        <div class="my-form__actions">
+                            <div class="my-form__row">
+                                <span>Did you forget your password?</span>
+                                <a href="#" title="Reset Password">
+                                    Reset Password
+                                </a>
+                            </div>
+                            <div class="my-form__signup">
+                                <a href="#" title="Create Account">
+                                    Create Account
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="info-side">
+                <img src="../img/mock.png" alt="Mock" class="mockup">
+                <div class="welcome-message">
+                    <h2>Navitron Maps! 👋</h2>
+                    <p>
+                       Your ultimate guide to navigating the world 
+                       and discovering new places with ease.
+                    </p>    
+                </div>
+            </div>
+        </div>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
